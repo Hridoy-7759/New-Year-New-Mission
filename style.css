@@ -1,0 +1,368 @@
+:root {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.welcome {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 6em;
+  margin: 1em 3em;
+  text-align: center;
+  border-radius: 0.5em;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("1_topBanner.png") no-repeat scroll center;
+  background-size: 100% 100%;
+}
+.welcome .subtitle {
+  color: white;
+}
+.welcome .title {
+  font-size: 3em;
+  color: white;
+  margin: 0.5em;
+}
+
+.off-offer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin: 5em 0 0 0;
+}
+.off-offer .off {
+  color: red;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.off-offer .subtitle {
+  font-size: 0.7em;
+  color: red;
+}
+.off-offer .title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.off-offer img {
+  height: 15em;
+  margin: 1em 0 0 0;
+}
+
+.heroSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3em 1em;
+  margin: 5em 3em;
+  gap: 4em;
+  border-radius: 0.5em;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("3_midNightParty.jpg") no-repeat scroll center;
+  background-size: 100% 100%;
+}
+.heroSection img {
+  width: 10em;
+}
+.heroSection .title {
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+}
+.heroSection .des {
+  margin: 1em 0 2em 0;
+  color: white;
+  font-weight: lighter;
+}
+.heroSection a {
+  text-decoration: none;
+  color: white;
+  border: 0.1em solid rgba(0, 0, 0, 0.6);
+  padding: 0.3em 1.5em;
+  border-radius: 0.5em;
+}
+
+.details {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  margin: 5em 3em;
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0) 100%);
+  font-weight: bold;
+  font-size: 1.1;
+}
+.details span {
+  color: orangered;
+}
+.details a {
+  text-decoration: none;
+  margin: 2em 0 0 0;
+  background: orangered;
+  color: white;
+  padding: 0.3em 1em;
+  border-radius: 0.5em;
+}
+
+.comingSoon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  margin: 5em 3em;
+}
+.comingSoon .left, .comingSoon .center, .comingSoon .right {
+  border: 0.3em solid;
+  max-width: 25%;
+}
+.comingSoon .left {
+  border: none;
+}
+.comingSoon .left .subtitle {
+  color: red;
+  font-size: 0.8em;
+}
+.comingSoon .left .title {
+  color: black;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: 1.5em;
+}
+.comingSoon .left .des {
+  font-size: 0.6em;
+}
+.comingSoon .center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 50%;
+  border-color: red;
+}
+.comingSoon .center img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.comingSoon .right {
+  border: none;
+}
+.comingSoon .right .year {
+  font-size: 1.5em;
+  color: red;
+  font-weight: bold;
+}
+.comingSoon .right .des {
+  font-size: 0.7em;
+  margin: 1em 0;
+}
+.comingSoon .right img {
+  width: 4em;
+}
+
+.saleText {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+  margin: 3em 3em 0 3em;
+}
+.saleText .title {
+  font-size: 2em;
+}
+.saleText .title span {
+  color: red;
+  font-weight: bold;
+}
+.saleText .des {
+  font-size: 0.8em;
+}
+
+.saleImg {
+  margin: 2em 3em 0 3em;
+  position: relative;
+  height: 20em;
+}
+.saleImg img {
+  position: absolute;
+}
+.saleImg .bottom {
+  left: 0;
+  top: 100%;
+  height: 6em;
+  margin: -6em 0 0 0;
+  width: 100%;
+}
+.saleImg .human {
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 16em;
+  border-radius: 0.5em;
+}
+.saleImg .saleLogo {
+  width: 8em;
+  height: 8em;
+  top: 50%;
+  margin-top: -8em;
+  right: 25%;
+}
+.saleImg .box {
+  height: 12em;
+  bottom: 1em;
+  z-index: 10;
+  left: 3em;
+}
+
+.portfolio {
+  margin: 3em 3em 0 3em;
+}
+.portfolio .subtitle {
+  color: red;
+  font-size: 0.8em;
+}
+.portfolio .title {
+  color: black;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: 2.5em;
+}
+.portfolio .des {
+  font-size: 0.8em;
+}
+
+.portfolioSample {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 1em 3em;
+}
+.portfolioSample img {
+  width: 30%;
+  height: 20em;
+}
+
+.subscribe {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  background: rgba(255, 0, 0, 0.05);
+  padding: 2em;
+  margin: 3em;
+  text-align: center;
+  border-radius: 0.5em;
+}
+.subscribe img {
+  width: 5em;
+}
+.subscribe .title {
+  color: black;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: 2.5em;
+}
+.subscribe .des {
+  font-size: 0.8em;
+}
+.subscribe form {
+  width: 50%;
+  margin: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe form input {
+  padding: 0.5rem;
+  border: none;
+}
+.subscribe form input[type=email] {
+  width: 70%;
+  border-radius: 1em 0 0 1em;
+  font-size: 0.8em;
+}
+.subscribe form input[type=submit] {
+  width: 30%;
+  border-radius: 0 1em 1em 0;
+  background: #f00;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 3em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+footer .reachout, footer .social, footer .copyRight {
+  width: 100%;
+}
+footer .reachout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+footer .social img {
+  width: 2em;
+}
+footer .copyRight {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+<footer>
+    <div class="reachout">
+        <address>
+            44, Big Building Roosevelt Street <br>Beach Gardens Florida 33410
+        </address>
+        <p class="online">
+            +00 123 584 124 <br> www.website.com
+        </p>
+    </div>
+    <div class="social">
+        <img src="8_facebook.png" alt="">
+        <img src="8_Twitter.png" alt="">
+        <img src="8_Instagram.png" alt="">
+        <img src="8_Linkedin.png" alt="">
+    </div>
+    <div class="copyRight">
+        <p class="right">2017, All rights reserved</p>
+        <p class="uns">Unsubscribe</p>
+    </div>
+</footer>
+*/
+
+/*# sourceMappingURL=style.css.map */
